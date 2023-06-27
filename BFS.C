@@ -38,7 +38,7 @@ void bfs(int v)
        printf("%d",u);
        for(i=1;i<=n;i++)
        {
-	  if(a[v][i]==1 && vis[i]==0)
+	  if(a[u][i]==1 && vis[i]==0)
 	  {
 	     vis[i]=1;
 	     r=r+1;
