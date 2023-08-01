@@ -5,9 +5,9 @@ int is_cyclic(int,int);
 int main()
 {
     int cost[10][10],min_cost=0,min,i,j,n,no_e=1,a,b,u,v,x;
-    printf("Enter number of vertex\n");
+    printf("Enter number of vertices:\n");
     scanf("%d",&n);
-    printf("Enter weight in form of adjacency matrix\n");
+    printf("Enter the weight in the form of an adjacency matrix:\n");
 
     for(i=1;i<=n;i++)
     {
@@ -42,7 +42,7 @@ int main()
         x=is_cyclic(u,v);
         if(x==1)
         {
-            printf("\n%d to %d",a,b);
+            printf("\n%d to %d cost=%d",a,b,min);
             no_e++;
             min_cost+=min;
         }
